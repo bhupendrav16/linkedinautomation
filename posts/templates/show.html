@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+   
+    *{
+        font-family: 'Poppins', sans-serif;
+    }
+    
+
+    table {
+        align-items: center;
+        width: 80%;
+        border-collapse: collapse;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px solid black;
+        overflow: auto;
+        margin-top:2%;
+        margin-left:10%;
+        border-radius: 10px;
+        background: linear-gradient(to bottom, #030506, #0182d8);
+       
+        
+    }       
+
+    th, td {
+        color:white;
+        padding: 12px;
+        text-align: left;
+        border-bottom: 2px solid #fffafa;
+        border-right: 2px solid #ddd;
+    }
+
+    th {
+        background: linear-gradient(to bottom, #1b4d70, #0182d8);
+        color: #fefefe;
+           
+    }
+    tr:first-child {
+        background-color: #2c3e50; /* Darker background for the first row */
+        color: #fff; /* Adjust text color for better visibility on dark background */
+       
+        
+    }
+    .name{
+        margin:auto;
+        display: flex;
+        justify-content: center;
+        margin-left:10%;
+        margin-right: 10%;
+        border-radius: 7px;
+        font-size: 14px;
+        font-weight: bolder;
+        color: white;
+        background: linear-gradient(to bottom, #1b4d70, #0182d8);
+       
+    }
+    
+    tr:hover {
+        background-color: #e36262;
+    }
+</style>
+<body>
+    <div class="main">
+        <table>
+            <tr>
+                <th>Git Command</th>
+<th>Usage Example</th>
+<th>Description</th>
+            </tr>
+            {% for c in obj %}
+              
+            <tr>
+                <td>{{c.name}}</td>  
+                <td>{{c.example}} </td>  
+                <td>{{c.description}}</td>
+            </tr>
+            {% endfor %}
+            
+        </table>
+        <div class="name">
+            <p>Bhupendra Vaishnav</p>
+        </div>
+        
+    </div>
+</body>
+</html>

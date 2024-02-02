@@ -1,0 +1,16 @@
+Command,Example,Use
+git init,git init,Initializes a new Git repository in the current directory.
+git clone 🤡,git clone https://github.com/user/repo.git,Creates a copy of a remote repository on your local machine.
+git add➕,git add filename.txt,Adds changes in a file to the staging area.
+git commit📝,"git commit -m ""Commit message""",Records changes staged for the next commit.
+git status🗒️,git status,"Shows the status of changes as untracked, modified, or staged."
+git pull 📥,git pull origin master,Fetches changes from a remote repository and merges them into the current branch.
+git push 🚀,git push origin master,Pushes committed changes to a remote repository.
+git branch 🍃,git branch,"Lists all local branches, highlighting the current one."
+git checkout,git checkout branchname,Switches to the specified branch.
+git merge 🔀,git merge branchname,Merges changes from the specified branch into the current branch.
+git log 🪵,git log,Displays the commit history.
+git remote,git remote -v,Lists remote repositories.
+git fetch,git fetch origin,Downloads changes from a remote repository without merging.
+git rm,git rm filename.txt,Removes a file from both the working directory and the Git repository.
+git reset ↩️,git reset filename.txt,Unstages changes in a file but preserves its content.
